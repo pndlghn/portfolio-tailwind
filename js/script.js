@@ -10,3 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true,
   });
 });
+
+// hamburger
+const hamburger = document.querySelector("#hamburger");
+const navMenu = document.querySelector("#nav-menu");
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("is-active");
+  navMenu.classList.toggle("hidden");
+});
