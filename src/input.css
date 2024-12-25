@@ -9,6 +9,17 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.fa-quote i {
+  color: #4a90e2;
+}
+
+.fa-quote .fa-quote-left {
+  margin-right: 10px;
+}
+
+.fa-quote .fa-quote-right {
+  margin-left: 10px;
+}
 .hamburger-line {
   @apply w-[30px] h-[2px] my-2 block bg-black;
 }

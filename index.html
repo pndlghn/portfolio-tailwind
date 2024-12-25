@@ -7,8 +7,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/output.css" />
-    <title>Protfolio-pndlghn</title>
+    <title>Portfolio-pndlghn</title>
   </head>
   <body>
     <!-- Header Start -->
@@ -37,7 +41,6 @@
                 class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
               ></span>
             </button>
-
             <nav
               id="nav-menu"
               class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:shadow-none lg:rounded-none"
@@ -82,7 +85,7 @@
                   <a
                     href="#contact"
                     class="text-sm text-black py-2 mx-4 flex border-b group-hover:text-quaternary lg:border-none lg:font-bold lg:ml-52 lg:mr-8"
-                    >Contact</a
+                    >Contact Me</a
                   >
                 </li>
               </ul>
@@ -93,8 +96,8 @@
     </header>
     <!-- Header End -->
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36 pb-16">
-      <div class="container">
+    <section id="home">
+      <div class="container pt-40 pb-20 border-b">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-tertiary">
@@ -130,8 +133,8 @@
     </section>
     <!-- Hero Section End -->
     <!-- About Section Start -->
-    <section id="about" class="pt-40">
-      <div class="container">
+    <section id="about">
+      <div class="container pt-40 pb-20 border-b">
         <div class="flex flex-wrap">
           <div class="w-full mb-10 px-4 lg:w-1/2">
             <h2 class="font-bold text-tertiary text-5xl mb-4">About.</h2>
@@ -213,17 +216,18 @@
             </div>
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative lg:right-0"></div>
-            <img
-              src="src/img/magicpattern-blob-1735057476835.png"
-              alt="Hello"
-              class="max-w-lg mx-auto"
-            />
+            <div class="relative lg:right-0">
+              <img
+                src="src/img/magicpattern-blob-1735057476835.png"
+                alt="Hello"
+                class="max-w-sm mx-auto lg:max-w-lg"
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="pt-8 pb-16 bg-secondary">
+    <section class="pt-8 pb-16 bg-secondary border-b shadow-2xl">
       <div class="container mx-auto px-4">
         <div id="cardContainer" class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Kartu 1 -->
@@ -376,7 +380,30 @@
       </div>
     </section>
     <!-- PortFolio Section End -->
-
+    <!-- Quote Section Start -->
+    <section id="quoteSection" class="pb-16">
+      <div
+        class="h-screen bg-cover bg-fixed bg-center flex items-center justify-center text-white text-center grayscale"
+        id="parallaxSection"
+        style="
+          background-image: url(src/img/tim-stief-YFFGkE3y4F8-unsplash.jpg);
+        "
+      >
+        <div class="container">
+          <blockquote
+            id="quote"
+            class="font-sans italic text-5xl text-secondary font-bold"
+          >
+            <i class="fas fa-quote-left"></i>
+            The only limit to our realization of tomorrow is our doubts of
+            today.
+            <i class="fas fa-quote-right"></i>
+            <footer class="mt-4 text-lg">- Franklin D. Roosevelt</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <!-- Quote Section End -->
     <script src="js/script.js"></script>
     <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

@@ -31,3 +31,10 @@ document.getElementById("seeMoreButton").addEventListener("click", function () {
     this.style.display = "none";
   }
 });
+
+// Menambahkan efek parallax saat halaman di-scroll
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY; // Posisi scroll
+  const parallaxSection = document.getElementById("parallaxSection");
+  parallaxSection.style.backgroundPositionY = `${scrollY * 0.0}px`; // Gerakan lebih lambat (0.5 adalah kecepatan)
+});
