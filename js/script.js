@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var typed = new Typed("#typed", {
     strings: [
       "I am Pandu Alghani.",
-      "I am pndlghn.",
+      "I am WordPress Developer.",
+      "I am Full-Stack Developer.",
       "I build awesome websites.",
     ],
     typeSpeed: 50,
